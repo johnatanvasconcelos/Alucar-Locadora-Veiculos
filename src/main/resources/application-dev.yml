@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: alucar
+  datasource:
+    url: jdbc:postgresql://localhost:5432/locadora_db
+    username: postgres
+    password: johnatan123
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+logging:
+  level:
+    org.hibernate.SQL: debug
+    org.hibernate.type.descriptor.sql.BasicBinder: trace
